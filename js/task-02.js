@@ -16,7 +16,7 @@ const ingredients = [
 
 const container = document.querySelector('#ingredients');
 
-const newList = ingredients.map(function (ingredient) {
+const newList = ingredients.map((ingredient) => {
   const newElem = document.createElement('li');
   newElem.textContent = ingredient;
   newElem.classList.add('item');
@@ -27,8 +27,3 @@ const newList = ingredients.map(function (ingredient) {
 
 container.append(...newList);
 
-// const newList2 = ingredients.map(({ingredient}) => 
-//   `<li > ${ingredient} </li>`
-// ).join('');
-
-// console.log(newList2);

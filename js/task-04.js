@@ -4,25 +4,30 @@
 // зменшуй значення лічильника.
 // Оновлюй інтерфейс новим значенням змінної counterValue.
 
+let count = 0;
+
 const ref = {
     decrement: document.querySelector('button[data-action="decrement"]'),
     increment: document.querySelector('button[data-action="increment"]'),
     counterValue: document.querySelector("#value"),
 };
 
-console.log(ref.counterValue.textContent);
-
+// console.log(ref.counterValue.textContent);
 
 const onButtonClickDecr = () => {
-    ref.counterValue.textContent= parseInt(ref.counterValue.textContent) - 1;
-    console.log(ref.counterValue.textContent);
+    // ref.counterValue.textContent= parseInt(ref.counterValue.textContent) - 1;
+    count -= 1;
+    ref.counterValue.textContent = count;
+    // console.log(ref.counterValue.textContent);
 };
 
 ref.decrement.addEventListener('click', onButtonClickDecr);
 
 const onButtonClickIncr = () => {
-    ref.counterValue.textContent= parseInt(ref.counterValue.textContent|| 0) + 1;
-    console.log(ref.counterValue.textContent);
+    // ref.counterValue.textContent= parseInt(ref.counterValue.textContent|| 0) + 1;
+    count += 1;
+    ref.counterValue.textContent = count;
+    // console.log(ref.counterValue.textContent);
 }
 
 

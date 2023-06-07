@@ -12,7 +12,11 @@ const validation = document.querySelector('#validation-input');
 const inputFocus = () => { 
     if (validation.value.length === parseInt(validation.dataset.length)) {
         validation.classList.add("valid");
-    } else (validation.classList.add("invalid"));
+        validation.classList.remove("invalid");
+    } else {
+        validation.classList.add("invalid");
+        validation.classList.remove("valid");
+    };
     // console.log(validation.value.length);
 };
 

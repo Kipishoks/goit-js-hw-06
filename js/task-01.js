@@ -15,9 +15,7 @@ const ref = {
    
 console.log('Number of categories:', ref.list);
 
-Object.values(ref.listUl).forEach(function (element) {
+Object.values(ref.listUl).forEach( (element) => {
     console.log('Category:', element.firstElementChild.textContent);
     console.log('Elements:', element.lastElementChild.childElementCount);
-    
 });
-

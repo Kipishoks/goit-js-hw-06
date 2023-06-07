@@ -12,7 +12,7 @@ console.dir(ref.outputText);
 
 const onButtonClick = () => {
     const inputName = ref.inputName.value;
-    if (inputName != '') {
+    if (inputName !== '') {
         ref.outputText.textContent = inputName;
         console.log(inputName);
     } else

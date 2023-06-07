@@ -21,11 +21,11 @@ const checkForm = (event) => {
     
     if (email.value === '' || password.value === '') {
         alert("Всі поля повинні бути заповнені");
-    } else {
+        return;
+    } 
         formData.email = email.value;
         formData.password = password.value;
-        }
-
+        
     console.log(formData); 
 
     event.currentTarget.reset();
